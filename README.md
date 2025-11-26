@@ -46,11 +46,43 @@ tfprestes/
 
 ## 🚀 Deploy no GitHub Pages
 
-### 1 Comando (após configuração inicial):
+### ⚠️ IMPORTANTE: Git não está instalado
 
-```bash
-git init && git add . && git commit -m "Portfolio Thiago Prestes" && git branch -M main && git remote add origin https://github.com/tfprestes/tfprestes.github.io.git && git push -u origin main
+O Git precisa estar instalado no sistema. Escolha uma opção:
+
+### Opção 1: Script Automático (Recomendado)
+
+1. **Instale o Git**: https://git-scm.com/download/win
+   - ⚠️ Marque "Add Git to PATH" durante a instalação
+2. **Reinicie o PowerShell**
+3. **Execute o script**:
+   ```powershell
+   cd C:\Sistemas\tfprestes
+   .\deploy.ps1
+   ```
+
+### Opção 2: GitHub Desktop (Mais Fácil)
+
+1. **Instale**: https://desktop.github.com/
+2. **Abra GitHub Desktop** → File → Add Local Repository
+3. **Escolha**: `C:\Sistemas\tfprestes`
+4. **Publish** → Nome: `tfprestes.github.io`
+5. **Ative GitHub Pages** em Settings → Pages
+
+### Opção 3: Comandos Manuais (PowerShell)
+
+Execute **um por vez** (PowerShell não aceita `&&`):
+
+```powershell
+git init
+git add .
+git commit -m "Portfolio Thiago Prestes"
+git branch -M main
+git remote add origin https://github.com/tfprestes/tfprestes.github.io.git
+git push -u origin main
 ```
+
+📖 **Guia completo**: Veja `DEPLOY_INSTRUCOES.md` para detalhes
 
 ### Passo a Passo:
 
