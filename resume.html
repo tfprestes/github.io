@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Currículo completo de Thiago Prestes - Versões em Português e Inglês para download">
+    <title>Currículo - Thiago Prestes</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+    
+    <!-- Header Fixo -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-sm">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center space-x-2 text-xl font-bold text-blue-600 dark:text-blue-400">
+                    <img src="assets/img/logo.svg" alt="Logo" class="w-8 h-8">
+                    <span data-i18n="nav.name">Thiago Prestes</span>
+                </a>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+                    <a href="about.html" class="nav-link" data-i18n="nav.about">Sobre</a>
+                    <a href="resume.html" class="nav-link active" data-i18n="nav.resume">Currículo</a>
+                    <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contato</a>
+                    <button id="langToggle" class="px-3 py-1 rounded-md bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors font-semibold">EN</button>
+                    <button id="themeToggle" class="p-2 rounded-md bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:inline"></i>
+                    </button>
+                </div>
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-md bg-gray-200 dark:bg-gray-700">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-200 dark:border-gray-700">
+                <div class="flex flex-col space-y-3 pt-4">
+                    <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+                    <a href="about.html" class="nav-link" data-i18n="nav.about">Sobre</a>
+                    <a href="resume.html" class="nav-link active" data-i18n="nav.resume">Currículo</a>
+                    <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contato</a>
+                    <div class="flex items-center justify-between pt-2">
+                        <button id="langToggleMobile" class="px-3 py-1 rounded-md bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 font-semibold">EN</button>
+                        <button id="themeToggleMobile" class="p-2 rounded-md bg-gray-200 dark:bg-gray-700">
+                            <i class="fas fa-moon dark:hidden"></i>
+                            <i class="fas fa-sun hidden dark:inline"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Resume Section -->
+    <section class="pt-32 pb-20 px-4">
+        <div class="container mx-auto max-w-7xl">
+            <h1 class="text-5xl font-bold text-center mb-4" data-aos="fade-up" data-i18n="resume.title">Currículo</h1>
+            <p class="text-center text-gray-600 dark:text-gray-400 mb-12" data-i18n="resume.subtitle">Versões em Português e Inglês disponíveis para download</p>
+            
+            <!-- Download Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12" data-aos="fade-up">
+                <a href="assets/pdf/curriculo-thiago-prestes-br-2025.pdf" download class="btn-primary">
+                    <i class="fas fa-download mr-2"></i>
+                    <span data-i18n="resume.downloadPT">Download CV (Português)</span>
+                </a>
+                <a href="assets/pdf/cv-thiago-prestes-usa-2025.pdf" download class="btn-secondary">
+                    <i class="fas fa-download mr-2"></i>
+                    <span data-i18n="resume.downloadEN">Download CV (English)</span>
+                </a>
+            </div>
+            
+            <!-- PDF Viewers -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8" data-aos="fade-up">
+                <!-- Portuguese Version -->
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="text-2xl font-bold" data-i18n="resume.portuguese">Versão em Português</h2>
+                        <a href="assets/pdf/curriculo-thiago-prestes-br-2025.pdf" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">
+                            <i class="fas fa-external-link-alt mr-2"></i>
+                            <span data-i18n="resume.openNew">Abrir em nova aba</span>
+                        </a>
+                    </div>
+                    <div class="border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden" style="height: 800px;">
+                        <iframe src="assets/pdf/curriculo-thiago-prestes-br-2025.pdf" class="w-full h-full" frameborder="0"></iframe>
+                    </div>
+                </div>
+                
+                <!-- English Version -->
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="text-2xl font-bold" data-i18n="resume.english">English Version</h2>
+                        <a href="assets/pdf/cv-thiago-prestes-usa-2025.pdf" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">
+                            <i class="fas fa-external-link-alt mr-2"></i>
+                            <span data-i18n="resume.openNew">Open in new tab</span>
+                        </a>
+                    </div>
+                    <div class="border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden" style="height: 800px;">
+                        <iframe src="assets/pdf/cv-thiago-prestes-usa-2025.pdf" class="w-full h-full" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile Alternative -->
+            <div class="lg:hidden mt-8 space-y-6">
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl p-6">
+                    <h2 class="text-2xl font-bold mb-4" data-i18n="resume.portuguese">Versão em Português</h2>
+                    <a href="assets/pdf/curriculo-thiago-prestes-br-2025.pdf" target="_blank" class="btn-primary w-full text-center block">
+                        <i class="fas fa-external-link-alt mr-2"></i>
+                        <span data-i18n="resume.viewPDF">Visualizar PDF</span>
+                    </a>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-xl p-6">
+                    <h2 class="text-2xl font-bold mb-4" data-i18n="resume.english">English Version</h2>
+                    <a href="assets/pdf/cv-thiago-prestes-usa-2025.pdf" target="_blank" class="btn-secondary w-full text-center block">
+                        <i class="fas fa-external-link-alt mr-2"></i>
+                        <span data-i18n="resume.viewPDF">View PDF</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 dark:bg-black text-white py-12 px-4">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-center md:text-left">
+                    <p class="text-gray-400" data-i18n="footer.copyright">© 2025 Thiago Fernando Vieira Prestes. Todos os direitos reservados.</p>
+                    <p class="text-gray-500 mt-2 text-sm" data-i18n="footer.available">Disponível para relocação remota internacional</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://linkedin.com/in/tfprestes" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/tfprestes" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://wa.me/5519999999999" target="_blank" class="social-link" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+

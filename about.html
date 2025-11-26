@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça a trajetória profissional de Thiago Prestes, Supervisor Sênior de TI/OT com mais de 23 anos de experiência em automação industrial">
+    <title>Sobre - Thiago Prestes</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+    
+    <!-- Header Fixo -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-sm">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center space-x-2 text-xl font-bold text-blue-600 dark:text-blue-400">
+                    <img src="assets/img/logo.svg" alt="Logo" class="w-8 h-8">
+                    <span data-i18n="nav.name">Thiago Prestes</span>
+                </a>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+                    <a href="about.html" class="nav-link active" data-i18n="nav.about">Sobre</a>
+                    <a href="resume.html" class="nav-link" data-i18n="nav.resume">Currículo</a>
+                    <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contato</a>
+                    <button id="langToggle" class="px-3 py-1 rounded-md bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors font-semibold">EN</button>
+                    <button id="themeToggle" class="p-2 rounded-md bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:inline"></i>
+                    </button>
+                </div>
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-md bg-gray-200 dark:bg-gray-700">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-200 dark:border-gray-700">
+                <div class="flex flex-col space-y-3 pt-4">
+                    <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+                    <a href="about.html" class="nav-link active" data-i18n="nav.about">Sobre</a>
+                    <a href="resume.html" class="nav-link" data-i18n="nav.resume">Currículo</a>
+                    <a href="contact.html" class="nav-link" data-i18n="nav.contact">Contato</a>
+                    <div class="flex items-center justify-between pt-2">
+                        <button id="langToggleMobile" class="px-3 py-1 rounded-md bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 font-semibold">EN</button>
+                        <button id="themeToggleMobile" class="p-2 rounded-md bg-gray-200 dark:bg-gray-700">
+                            <i class="fas fa-moon dark:hidden"></i>
+                            <i class="fas fa-sun hidden dark:inline"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- About Section -->
+    <section class="pt-32 pb-20 px-4">
+        <div class="container mx-auto max-w-4xl">
+            <h1 class="text-5xl font-bold text-center mb-12" data-aos="fade-up" data-i18n="about.pageTitle">Sobre Mim</h1>
+            
+            <div class="prose prose-lg dark:prose-invert max-w-none" data-aos="fade-up">
+                <div class="mb-8">
+                    <img src="assets/img/thiago.jpg" alt="Thiago Prestes" class="w-64 h-64 rounded-full mx-auto object-cover shadow-xl mb-8">
+                </div>
+                
+                <p class="text-xl leading-relaxed mb-6 text-gray-700 dark:text-gray-300" data-i18n="about.paragraph1">
+                    Engenheiro de Automação Industrial com mais de <strong>23 anos de experiência</strong> em tecnologia, especializado em redes industriais, segurança cibernética OT e integração de sistemas. Líder técnico com histórico comprovado de <strong>redução de downtime em 42%</strong> através de implementações estratégicas de infraestrutura e automação.
+                </p>
+                
+                <p class="text-lg leading-relaxed mb-6 text-gray-700 dark:text-gray-300" data-i18n="about.paragraph2">
+                    Minha trajetória profissional começou em 2002 como técnico em eletrônica, evoluindo para desenvolvedor de software e posteriormente especializando-me em automação industrial. Ao longo dos anos, desenvolvi expertise em protocolos industriais como <strong>PROFINET</strong>, <strong>EtherNet/IP</strong> e <strong>OPC-UA</strong>, além de profundo conhecimento em programação de CLPs (Siemens, Allen-Bradley) e sistemas SCADA.
+                </p>
+                
+                <h2 class="text-3xl font-bold mt-12 mb-6" data-i18n="about.expertiseTitle">Áreas de Expertise</h2>
+                
+                <ul class="list-disc list-inside space-y-3 text-lg text-gray-700 dark:text-gray-300 mb-8">
+                    <li data-i18n="about.expertise1"><strong>Redes Industriais:</strong> Projeto, implementação e manutenção de infraestrutura de rede para ambientes industriais críticos</li>
+                    <li data-i18n="about.expertise2"><strong>Segurança Cibernética OT:</strong> Implementação de políticas de segurança, segmentação de rede e proteção de sistemas industriais</li>
+                    <li data-i18n="about.expertise3"><strong>Automação e Controle:</strong> Programação de CLPs, desenvolvimento de sistemas SCADA e integração MES/ERP</li>
+                    <li data-i18n="about.expertise4"><strong>Virtualização:</strong> VMware, Hyper-V e containerização para ambientes industriais</li>
+                    <li data-i18n="about.expertise5"><strong>Gestão de Projetos:</strong> Liderança técnica de equipes multidisciplinares e entrega de projetos complexos</li>
+                </ul>
+                
+                <h2 class="text-3xl font-bold mt-12 mb-6" data-i18n="about.achievementsTitle">Principais Conquistas</h2>
+                
+                <div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg mb-8">
+                    <ul class="space-y-3 text-lg text-gray-700 dark:text-gray-300">
+                        <li data-i18n="about.achievement1">✓ <strong>Redução de 42% no downtime</strong> através de otimização de infraestrutura e monitoramento proativo</li>
+                        <li data-i18n="about.achievement2">✓ <strong>Implementação de segurança cibernética OT</strong> com zero incidentes de segurança em 3 anos</li>
+                        <li data-i18n="about.achievement3">✓ <strong>Liderança de equipes técnicas</strong> em projetos de grande escala com entrega dentro do prazo e orçamento</li>
+                        <li data-i18n="about.achievement4">✓ <strong>Integração de sistemas MES/ERP</strong> resultando em aumento de 30% na eficiência operacional</li>
+                    </ul>
+                </div>
+                
+                <h2 class="text-3xl font-bold mt-12 mb-6" data-i18n="about.goalsTitle">Objetivos Profissionais</h2>
+                
+                <p class="text-lg leading-relaxed mb-8 text-gray-700 dark:text-gray-300" data-i18n="about.goalsText">
+                    Busco oportunidades desafiadoras em empresas que valorizam inovação tecnológica e excelência operacional. Estou especialmente interessado em posições remotas internacionais, especialmente nos Estados Unidos, onde posso aplicar minha expertise em TI/OT e contribuir para projetos de automação industrial de classe mundial.
+                </p>
+                
+                <div class="text-center mt-12">
+                    <a href="contact.html" class="btn-primary inline-block" data-i18n="about.contactCTA">
+                        Entre em Contato
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 dark:bg-black text-white py-12 px-4">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-center md:text-left">
+                    <p class="text-gray-400" data-i18n="footer.copyright">© 2025 Thiago Fernando Vieira Prestes. Todos os direitos reservados.</p>
+                    <p class="text-gray-500 mt-2 text-sm" data-i18n="footer.available">Disponível para relocação remota internacional</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://linkedin.com/in/tfprestes" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/tfprestes" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://wa.me/5519999999999" target="_blank" class="social-link" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+

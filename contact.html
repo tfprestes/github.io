@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com Thiago Prestes para oportunidades profissionais e projetos">
+    <title>Contato - Thiago Prestes</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+    
+    <!-- Header Fixo -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-sm">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center space-x-2 text-xl font-bold text-blue-600 dark:text-blue-400">
+                    <img src="assets/img/logo.svg" alt="Logo" class="w-8 h-8">
+                    <span data-i18n="nav.name">Thiago Prestes</span>
+                </a>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+                    <a href="about.html" class="nav-link" data-i18n="nav.about">Sobre</a>
+                    <a href="resume.html" class="nav-link" data-i18n="nav.resume">Currículo</a>
+                    <a href="contact.html" class="nav-link active" data-i18n="nav.contact">Contato</a>
+                    <button id="langToggle" class="px-3 py-1 rounded-md bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors font-semibold">EN</button>
+                    <button id="themeToggle" class="p-2 rounded-md bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:inline"></i>
+                    </button>
+                </div>
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-md bg-gray-200 dark:bg-gray-700">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-200 dark:border-gray-700">
+                <div class="flex flex-col space-y-3 pt-4">
+                    <a href="index.html" class="nav-link" data-i18n="nav.home">Home</a>
+                    <a href="about.html" class="nav-link" data-i18n="nav.about">Sobre</a>
+                    <a href="resume.html" class="nav-link" data-i18n="nav.resume">Currículo</a>
+                    <a href="contact.html" class="nav-link active" data-i18n="nav.contact">Contato</a>
+                    <div class="flex items-center justify-between pt-2">
+                        <button id="langToggleMobile" class="px-3 py-1 rounded-md bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 font-semibold">EN</button>
+                        <button id="themeToggleMobile" class="p-2 rounded-md bg-gray-200 dark:bg-gray-700">
+                            <i class="fas fa-moon dark:hidden"></i>
+                            <i class="fas fa-sun hidden dark:inline"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Contact Section -->
+    <section class="pt-32 pb-20 px-4">
+        <div class="container mx-auto max-w-4xl">
+            <h1 class="text-5xl font-bold text-center mb-4" data-aos="fade-up" data-i18n="contact.title">Entre em Contato</h1>
+            <p class="text-center text-gray-600 dark:text-gray-400 mb-12" data-i18n="contact.subtitle">Estou disponível para oportunidades profissionais, projetos e colaborações</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div data-aos="fade-right">
+                    <h2 class="text-2xl font-bold mb-6" data-i18n="contact.infoTitle">Informações de Contato</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-blue-600 dark:text-blue-400"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold mb-1" data-i18n="contact.email">E-mail</h3>
+                                <a href="mailto:thiago.prestes@example.com" class="text-blue-600 dark:text-blue-400 hover:underline">thiago.prestes@example.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fab fa-whatsapp text-green-600 dark:text-green-400"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold mb-1" data-i18n="contact.whatsapp">WhatsApp</h3>
+                                <a href="https://wa.me/5519999999999" target="_blank" class="text-green-600 dark:text-green-400 hover:underline">+55 19 99999-9999</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fab fa-linkedin-in text-blue-600 dark:text-blue-400"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold mb-1" data-i18n="contact.linkedin">LinkedIn</h3>
+                                <a href="https://linkedin.com/in/tfprestes" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">linkedin.com/in/tfprestes</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-gray-100 dark:bg-gray-800 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fab fa-github text-gray-700 dark:text-gray-300"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold mb-1" data-i18n="contact.github">GitHub</h3>
+                                <a href="https://github.com/tfprestes" target="_blank" class="text-gray-700 dark:text-gray-300 hover:underline">github.com/tfprestes</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 p-6 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                        <p class="text-sm text-gray-700 dark:text-gray-300" data-i18n="contact.availability">
+                            <strong>Disponibilidade:</strong> Aberto para oportunidades remotas internacionais, especialmente nos Estados Unidos. Disponível para relocação se necessário.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div data-aos="fade-left">
+                    <h2 class="text-2xl font-bold mb-6" data-i18n="contact.formTitle">Envie uma Mensagem</h2>
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-semibold mb-2" data-i18n="contact.formName">Nome</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-semibold mb-2" data-i18n="contact.formEmail">E-mail</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-sm font-semibold mb-2" data-i18n="contact.formSubject">Assunto</label>
+                            <input type="text" id="subject" name="subject" required class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-semibold mb-2" data-i18n="contact.formMessage">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary w-full" data-i18n="contact.formSubmit">
+                            <i class="fas fa-paper-plane mr-2"></i>Enviar Mensagem
+                        </button>
+                        
+                        <div id="formMessage" class="hidden p-4 rounded-lg"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 dark:bg-black text-white py-12 px-4">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-center md:text-left">
+                    <p class="text-gray-400" data-i18n="footer.copyright">© 2025 Thiago Fernando Vieira Prestes. Todos os direitos reservados.</p>
+                    <p class="text-gray-500 mt-2 text-sm" data-i18n="footer.available">Disponível para relocação remota internacional</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://linkedin.com/in/tfprestes" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/tfprestes" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://wa.me/5519999999999" target="_blank" class="social-link" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+

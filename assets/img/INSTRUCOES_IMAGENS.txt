@@ -1,0 +1,33 @@
+INSTRUÇÕES PARA SUBSTITUIR AS IMAGENS
+========================================
+
+As imagens thiago.jpg e thiago-dark.jpg são placeholders SVG.
+
+SUBSTITUA POR FOTOS PROFISSIONAIS REAIS:
+
+1. thiago.jpg
+   - Formato: JPG ou PNG
+   - Dimensões recomendadas: 800x800px (quadrado) ou 600x800px (retrato)
+   - Conteúdo: Foto profissional de Thiago Prestes
+     * Homem brasileiro, 39 anos
+     * Barba rala
+     * Camisa social azul escura
+     * Fundo neutro claro
+   - Qualidade: Alta resolução (mínimo 300 DPI para impressão)
+
+2. thiago-dark.jpg
+   - Mesma foto que thiago.jpg, mas com ajustes para dark mode
+   - Pode ser a mesma imagem ou uma versão com brilho/contraste ajustado
+   - Formato: JPG ou PNG
+   - Dimensões: Mesmas de thiago.jpg
+
+COMO OBTER AS FOTOS:
+- Contratar fotógrafo profissional
+- Usar serviço de geração de fotos profissionais (ex: Generated Photos, ThisPersonDoesNotExist)
+- Usar foto existente e editar com Photoshop/GIMP
+
+IMPORTANTE:
+- Mantenha os nomes dos arquivos exatamente como estão
+- Certifique-se de que as imagens estão na pasta assets/img/
+- Otimize as imagens para web (use TinyPNG ou similar) para melhor performance
+
