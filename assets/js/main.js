@@ -131,8 +131,8 @@ const translations = {
         'hero.subtitle': 'Supervisor Sênior de TI/OT',
         'hero.line1': '+23 anos em Tecnologia | +10 anos em Automação Industrial',
         'hero.line2': 'Especialista em Redes Industriais & Cybersecurity OT',
-        'hero.downloadEN': 'Download CV (EN)',
-        'hero.downloadPT': 'Download CV (PT)',
+        'hero.downloadEN': 'Ver CV (EN)',
+        'hero.downloadPT': 'Ver CV (PT)',
         'hero.contact': 'Fale comigo',
         'about.title': 'Sobre Mim',
         'about.currentRole': 'Supervisor Sênior de TI/OT na Alibra Ingredientes S.A.',
@@ -175,6 +175,8 @@ const translations = {
         'resume.portuguese': 'Português',
         'resume.english': 'English',
         'resume.download': 'Download PDF',
+        'resume.openNew': 'Open in New Tab',
+        'resume.print': 'Print / Save PDF',
         'contact.title': 'Entre em Contato',
         'contact.name': 'Nome',
         'contact.email': 'E-mail',
@@ -196,8 +198,8 @@ const translations = {
         'hero.subtitle': 'Senior IT/OT Supervisor',
         'hero.line1': '+23 years in Technology | +10 years in Industrial Automation',
         'hero.line2': 'Industrial Networks & OT Cybersecurity Specialist',
-        'hero.downloadEN': 'Download CV (EN)',
-        'hero.downloadPT': 'Download CV (PT)',
+        'hero.downloadEN': 'Ver CV (EN)',
+        'hero.downloadPT': 'Ver CV (PT)',
         'hero.contact': 'Get in Touch',
         'about.title': 'About Me',
         'about.currentRole': 'Senior IT/OT Supervisor at Alibra Ingredientes S.A.',
@@ -240,6 +242,8 @@ const translations = {
         'resume.portuguese': 'Portuguese',
         'resume.english': 'English',
         'resume.download': 'Download PDF',
+        'resume.openNew': 'Open in New Tab',
+        'resume.print': 'Print / Save PDF',
         'contact.title': 'Get in Touch',
         'contact.name': 'Name',
         'contact.email': 'Email',
@@ -387,6 +391,20 @@ document.querySelectorAll('.glass-card').forEach(card => {
         observer.observe(card);
     }
 });
+
+// Print Resume Function
+window.printResume = function() {
+    const resumeSection = document.querySelector('#resume');
+    if (resumeSection) {
+        const iframe = resumeSection.querySelector('iframe');
+        if (iframe && iframe.contentWindow) {
+            iframe.contentWindow.print();
+        } else {
+            // Fallback: print current page
+            window.print();
+        }
+    }
+};
 
 // Initialize resume tab (Alpine.js will handle this, but we set default)
 document.addEventListener('DOMContentLoaded', () => {

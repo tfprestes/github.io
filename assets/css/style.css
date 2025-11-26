@@ -450,3 +450,39 @@ section {
     transform: translateY(-8px) scale(1.02);
     box-shadow: 0 20px 40px rgba(37, 99, 235, 0.2);
 }
+
+/* Delay Animation for Stats */
+.delay-300 {
+    animation-delay: 300ms;
+}
+
+/* Stats Cards Special */
+.glass-card .text-5xl {
+    line-height: 1;
+}
+
+/* Resume iframe styling */
+.resume-iframe {
+    width: 100%;
+    min-height: 800px;
+    border: none;
+    background: white;
+    transition: opacity 0.3s ease;
+}
+
+.resume-iframe:not([src=""]) {
+    opacity: 1;
+}
+
+.dark .resume-iframe {
+    background: #1f2937;
+}
+
+/* Ensure iframe content is visible */
+.resume-iframe iframe {
+    background: white !important;
+}
+
+.dark .resume-iframe iframe {
+    background: #1f2937 !important;
+}
